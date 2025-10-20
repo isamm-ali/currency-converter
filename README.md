@@ -37,51 +37,6 @@ Add real-time currency API integration
 Multi-currency support
 Dark mode toggle
 
-❄️ Widget Tree - 
-MyApp (StatefulWidget)
-└── MaterialApp
-    └── Scaffold
-        ├── backgroundColor: Color(219, 194, 166)
-        ├── appBar: AppBar
-        │   ├── title: Text("Currency Converter")
-        │   ├── centerTitle: true
-        │   └── backgroundColor: Color(65, 74, 55)
-        └── body: Center
-            └── Column (mainAxisAlignment: center)
-                ├── Container (Title Box)
-                │   ├── padding: 10
-                │   ├── margin: 25
-                │   ├── color: Color(65, 74, 55)
-                │   └── Text("- Convert USD to INR -")
-                │
-                ├── Container (TextField Wrapper)
-                │   ├── margin: 6
-                │   ├── padding: 10
-                │   └── TextField
-                │       ├── controller: textEditingController
-                │       ├── decoration: InputDecoration
-                │       │   ├── hintText: "Enter the amount in USD"
-                │       │   ├── prefixIcon: Icon(Icons.attach_money)
-                │       │   ├── fillColor: white
-                │       │   ├── enabledBorder: OutlineInputBorder(...)
-                │       │   └── focusedBorder: OutlineInputBorder(...)
-                │       └── keyboardType: numberWithOptions(decimal: true)
-                │
-                ├── TextButton ("Convert")
-                │   ├── onPressed: setState → update result
-                │   ├── style: TextButton.styleFrom(...)
-                │   └── child: Text("Convert")
-                │
-                └── Container (Result Display)
-                    ├── margin: 36
-                    ├── padding: 12
-                    ├── width: 500
-                    ├── decoration: BoxDecoration
-                    │   ├── color: Color(65, 74, 55)
-                    │   └── borderRadius: 50
-                    └── Text("INR: ₹$result")
-
-
 🧑‍💻 Author
 Isam Ali
 📍 Beginner Flutter Developer
